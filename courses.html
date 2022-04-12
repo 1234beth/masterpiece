@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>course</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='main.js'></script>
+  <link href="Assets/css/style.css">
+  <style>
+    .container {
+      background-color: aqua;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: burlywood;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+     <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#index.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#courses.html">courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form.html">form</a>
+        </li>
+      </ul>
+    -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="form.html">Form</a></li>
+    <!--<li style="float:right"><a class="active" href="#about">About</a></li>-->
+  </ul>
+  <h1 class="text-center">This are the available courses</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>software engineering</h3>
+        <p> is a detailed study of engineering to the design, development and maintenance of software. Software
+          engineering was introduced to address the issues of low-quality software projects. Problems arise when a
+          software generally exceeds timelines, budgets, and reduced levels of quality.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>database management</h3>
+        <p>A database management system (DBMS) is a software package designed to define, manipulate, retrieve and manage
+          data in a database. A DBMS generally manipulates the data itself, the data format, field names, record
+          structure and file structure. It also defines rules to validate and manipulate this data.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>programming</h3>
+        <p>Computer programming is the process of writing instructions that get executed by computers. The instructions,
+          also known as code, are written in a programming language</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>machine learning</h3>
+          <p> is a type of artificial intelligence (AI) that allows software applications to become more accurate at
+            predicting outcomes without being explicitly programmed to do so. Machine learning algorithms use historical
+            data as input to predict new output values.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>system designing</h3>
+          <p> System design is the process of defining the components, modules, interfaces, and data for a system to
+            satisfy specified requirements. System development is the process of creating or altering systems, along
+            with the processes, practices, models, and methodologies used to develop them.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>UI/UX</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolorum maxime dolore ad earum. Eveniet
+            et officiis quas minus ad, voluptas praesentium, quam quasi qui, placeat neque accusantium reiciendis
+            possimus?</p>
+        </div>
+      </div>
+    </div>
+    <select class="form-select" aria-label=".form-select-lg example">
+      <option selected>Open this select menu</option>
+      <option value="database management">database management</option>
+      <option value="web designing">web designing</option>
+      <option value="software engineering">software engineering</option>
+      <option value="programming languages">programming languages</option>
+      <option value="machine learning">machine learning</option>
+    </select><br>
+
+    <a class="btn btn-dark" href="form.html" role="button">submit</a>
+</body>
+
+</html>
