@@ -41,6 +41,24 @@
   .active {
     background-color: #04AA6D;
   }
+
+  .container {
+    border-radius: 5px;
+    margin-right: 00px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+  }
+
+  .btn {
+    border-radius: 10%;
+    
+  }
+
+  .body {
+    background-color: aqua;
+  }
 </style>
 
 <body>
@@ -48,34 +66,85 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="courses.html">Courses</a></li>
     <li><a href="form.html">Form</a></li>
-    <!--<li style="float:right"><a class="active" href="#about">About</a></li>-->
-  </ul>
 
-  <form method="get" action="#">
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="inputGroup-sizing-default">Full name</span>
-      <input type="text" class="form-control" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-default">
-    </div><br>
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="inputGroup-sizing-default">Next of kin</span>
-      <input type="text" class="form-control" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-default">
-    </div><br>
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="inputGroup-sizing-default">Phone Number</span>
-      <input type="text" class="form-control" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-default">
-    </div><br>
-    <div class="form-group">
-      <label>Email</label>
-      <input type="email" name="email" class="w3-input">
-    </div><br>
-    <label for="Date of Birth">date of birth:</label>
-    <input type="date" id="birthday" name="birthday">
-    <button type="button" class="btn btn-dark">submit</button>
-    <input class="btn btn-primary" type="reset" value="Reset">
-  </form>
+  </ul>
+  <!-- <div class="container">
+    <div class="row">
+-->
+<div class="container">
+  <div class="row">
+      <h1 class="text-center style-h1">Book a visit</h1>  
+      <div id="displayName" class="fw-bold fs-2 text-center text-white"></div>
+      <section class="form container">
+          <div class="row">
+              <div class="col-md-8">
+                  <form class="myform w-100">
+                     
+                      <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Full name</span>
+                          <input type="int" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Phone Number</span>
+                          <input type="text" id="na" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                        </div><br>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="inputGroup-sizing-default">Next of kin</span>
+                          <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                        </div><br>
+                        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">study period</span>
+          <input type="number" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+        </div><br>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+          <input type="email" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default">
+        </div><br>
+        <div class="form-group mb-5">
+          <label for="date" class="mylabel mb-4">Enter Date of intake</label>
+          <input class="form-control input p-4" type="date" id="dateInput">
+          <div id="message" class=" text-danger"></div>
+      </div>
+                      <div class="">
+                          <label for="date" class="mylabel mb-4">Gender</label>
+  
+                          <div class="form-group mb-2">
+                              <div class="form-check form-check-inline w-25">
+                                  <label class="form-check-label radio">
+                                      <input class="form-check-input radio" type="radio" name="inlineRadioOptions"
+                                          id="maleRadio" value="option1"> Male
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline w-15">
+                                  <label class="form-check-label radio">
+                                      <input class="form-check-input radio" type="radio" name="inlineRadioOptions"
+                                          id="femaleRadio" value="option2"> Female
+                                  </label>
+                              </div>
+                          </div>
+                          <div id="messageOne" class=" text-danger mb-4"></div>
+  
+                          <a id="btn" onclick="getFormInput()" class="btn btn-primary p-3">  submit</a>
+                          <input class="btn btn-primary" type="reset" value="Reset">
+                      </div>
+                  </form>
+              </div>
+              <!--<div class="col-md-4 img">
+                  <img src="hos1.jpg" alt="hospital" width="450px" height="350px">
+              </div> -->
+          </div>
+          <h1 class="text-center  mb-5">Thank you for trusting our services</h1>
+      </section>      
+      </div>
+  </div>
+</div>
+
+
   <script type="text/javascript" src="./Assets/js/main.js"></script>
 </body>
 
