@@ -18,10 +18,10 @@ function getFormInput(){
         }
   
         //This code block evaluates for the Feale Akan Name based on the dayindex above.
-       const getFemaleAkanName = (dayIndex)=>{
+       /*const getFemaleAkanName = (dayIndex)=>{
             const names = ['jan-mar','apr-jun','july-september','oct-dec','oct-dec','oct-dec','oct-dec']
             return names[dayIndex];
-        }
+        }*/
         
   
   
@@ -37,9 +37,8 @@ function getFormInput(){
         //Display Akan Name
         console.log(akanName)
   
-        document.getElementById('displayName').innerHTML ='<div class="alert alert-dark" role="alert"> congratulations! <br> Your session will be on: <span class="text-info">'+akanName+'</span>  Date of intake is on a <span class="text-info">'+dayName+'</span> </div>'
+        document.getElementById('displayName').innerHTML ='<div class="alert alert-primary" role="alert"> congratulations! <br> Your session will be on: <span class="text-danger">'+akanName+'</span>  Date of intake is on a <span class="text-danger">'+dayName+'</span> </div>'
   
   
   }
-
-
+  
