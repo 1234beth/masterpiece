@@ -12,13 +12,13 @@ function getFormInput(){
         const dayName = getDayName(dayIndex)
   
         //This code block evaluates for the Male Akan Name based on the dayindex above.
-        const getMaleAkanName = (dayIndex)=>{
+        const getMaleName = (dayIndex)=>{
            const names = ['jan-mar','apr-jun','july-september','oct-dec','oct-dec','oct-dec','oct-dec']  
                      return names[dayIndex];
         }
   
         //This code block evaluates for the Feale Akan Name based on the dayindex above.
-       const getFemaleAkanName = (dayIndex)=>{
+       const getFemaleName = (dayIndex)=>{
             const names = ['jan-mar','apr-jun','july-september','oct-dec','oct-dec','oct-dec','oct-dec']
             return names[dayIndex];
         }
@@ -27,17 +27,17 @@ function getFormInput(){
   
         if(male.checked){
             var gender = 'Male'
-           var akanName = getMaleAkanName(dayIndex)
+           var Name = getMaleName(dayIndex)
   
         }else if(female.checked){
             var gender = 'Female'
-            var akanName = getFemaleAkanName(dayIndex)
+            var akanName = getFemaleName(dayIndex)
         }
   
         //Display Akan Name
-        console.log(akanName)
+        console.log(Name)
   
-        document.getElementById('displayName').innerHTML ='<div class="alert alert-dark" role="alert"> congratulations! <br> Your session will be on: <span class="text-info">'+akanName+'</span>  Date of intake is on a <span class="text-info">'+dayName+'</span> </div>'
+        document.getElementById('displayName').innerHTML ='<div class="alert alert-dark" role="alert"> congratulations! <br> Your session will be on: <span class="text-info">'+Name+'</span>  Date of intake is on a <span class="text-info">'+dayName+'</span> </div>'
   
   
   }
